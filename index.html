@@ -66,15 +66,15 @@
     }
     .language{
       position: absolute;
-      top: 14px;
-      right: 20px;
+      top: 16px;
+      right: 24px;
       z-index: 2;
     }
     .language a{
       color: #303D4E;
       text-decoration: none;
-      margin-left: 6px;
-      font-size: 18px;
+      margin-left: 8px;
+      font-size: 20px;
     }
     .header{
       padding: 5vw 5vw 0;
@@ -260,6 +260,7 @@
     }
 
     @media only screen and (max-width: 400px) {
+      .home_framework_button:hover:after,
       .home_framework_button:focus:after{
         opacity: 0.3
       }
@@ -285,6 +286,10 @@
       #container{
         grid-template-columns: minmax(min-content, max-content) auto;
         grid-template-rows: 240px auto 30px;
+      }
+      .language a{
+        margin-left: 6px;
+        font-size: 16px;
       }
       .header{
         justify-content: flex-start;
@@ -320,6 +325,11 @@
       }
       footer{
         grid-column: 1 / span 2;
+      }
+    }
+    @media only screen and (min-width: 1121px) {
+      .language{
+        right: calc(50vw - 536px);
       }
     }
   </style>
