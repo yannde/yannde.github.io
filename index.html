@@ -64,6 +64,18 @@
       max-width: 1120px;
       margin: 0 auto;
     }
+    .language{
+      position: absolute;
+      top: 14px;
+      right: 20px;
+      z-index: 2;
+    }
+    .language a{
+      color: #303D4E;
+      text-decoration: none;
+      margin-left: 6px;
+      font-size: 18px;
+    }
     .header{
       padding: 5vw 5vw 0;
     }
@@ -140,7 +152,7 @@
     }
     .intro h1{
       font-size: 26px;
-      line-height: 1em;
+      line-height: 1.2em;
       text-transform: uppercase;
     }
     .intro h2{
@@ -247,6 +259,11 @@
       font-size: 14px;
     }
 
+    @media only screen and (max-width: 400px) {
+      .home_framework_button:focus:after{
+        opacity: 0.3
+      }
+    }
     @media only screen and (min-width: 401px) {
       #container{
         grid-template-rows: 240px minmax(min-content, max-content) auto 30px;
@@ -310,6 +327,10 @@
 
 <body>
   <section id="container">
+    <div class="language">
+      <a href="#">EN</a>
+      <a href="#">JA</a>
+    </div>
     <header class="header">
       <div class="logo">
           <div class="logo-content"></div>
