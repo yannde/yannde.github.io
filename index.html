@@ -83,7 +83,7 @@
       opacity: 0;
       pointer-events: none;
     }
-    #spa{
+    #container{
       display: grid;
       grid-template-rows: 60vw minmax(min-content, max-content) auto 44px;
       min-height: 100vh;
@@ -451,19 +451,19 @@
 
     var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
     if(iOS){
-      var spa = document.getElementById("spa");
+      var container = document.getElementById("container");
       var measure = document.getElementById("measure").scrollHeight;
       var scrollTimer,
         reScrollTimer,
         lastScrollFireTime = 0,
         minScrollTime = 100;
-      spa.style.minHeight = window.innerHeight + "px";
+        container.style.minHeight = window.innerHeight + "px";
       setTimeout(function() {
         scrollTo(document.body, 0, 400); 
-        spa.style.transition = "min-height 100ms";
+        container.style.transition = "min-height 100ms";
       }, 100);
       window.onscroll = function() {
-        if(measure > spa.scrollHeight){
+        if(measure > container.scrollHeight){
           var now = new Date().getTime();
 
           if (!scrollTimer && !reScrollTimer) {
@@ -480,7 +480,7 @@
           if (!reScrollTimer) {
             reScrollTimer = setTimeout(function() {
               reScrollTimer = null;
-              if(spa.scrollHeight >= window.innerHeight){
+              if(container.scrollHeight >= window.innerHeight){
                 scrollTo(document.body, 0, 400);
               }
             }, 1000);
@@ -488,12 +488,12 @@
         }
       };
       window.onresize = function() {
-        if(measure > spa.scrollHeight){
+        if(measure > container.scrollHeight){
           processScroll();
         }
       }
       function processScroll() {
-        spa.style.minHeight = window.innerHeight + "px";
+        container.style.minHeight = window.innerHeight + "px";
       }
     
       function scrollTo(element, to, duration) {
