@@ -103,8 +103,9 @@
       font-size: 20px;
     }
     .header{
-      height: 55vw;
+      height: 60vw;
       padding: 5vw 50vw 0;
+      box-sizing: border-box;
     }
     .header:before{
       content: "";
@@ -188,10 +189,10 @@
       color: #3FDBAC;
       text-transform: uppercase;
     }
-    .intro h2 span{
+    .intro h2 span > span > span{
       display: inline-block;
     }
-    .intro h2 span::first-letter{
+    .intro h2 span > span > span::first-letter{
       font-size: 1.6em;
     }
     .intro_data{
@@ -347,7 +348,6 @@
       }
       #container{
         grid-template-columns: minmax(min-content, max-content) auto;
-        grid-template-rows: 240px auto 30px;
       }
       .language a{
         margin-left: 6px;
@@ -383,6 +383,7 @@
         grid-column: 1 / span 2;
       }
       footer{
+        height: 30px;
         grid-column: 1 / span 2;
       }
     }
@@ -411,8 +412,8 @@
       </header>
       <section class="intro">
         <div class="intro_title">
-          <h1>Yann De Ceukelaire</h1>
-          <h2><span>Front-end</span> <span>Engineer</span></h2>
+          <h1><span><span>Yann De Ceukelaire</span></span></h1>
+          <h2><span><span><span>Front-end</span> <span>Engineer</span></span></span></h2>
         </div>
         <div class="intro_data">
             <p>Fukuoka, Japan</p>
