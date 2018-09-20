@@ -85,7 +85,7 @@
     }
     #container{
       display: grid;
-      grid-template-rows: 60vw minmax(min-content, max-content) auto minmax(min-content, max-content);
+      grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) auto minmax(min-content, max-content);
       min-height: 100vh;
       max-width: 1120px;
       margin: 0 auto;
@@ -103,7 +103,8 @@
       font-size: 20px;
     }
     .header{
-      padding: 5vw 5vw 0;
+      height: 60vw;
+      padding: 5vw 50vw 0;
     }
     .header:before{
       content: "";
@@ -130,7 +131,6 @@
     .js .logo-content {
       background-image: none;
     }
-
     .logo:before,
     .logo:after{
       content: "";
@@ -170,10 +170,6 @@
         background-size: 100%;
         z-index: 99999;
     }
-    .header{
-      display: flex;
-      justify-content: center;
-    }
     .intro{
       z-index: 1;
     }
@@ -185,6 +181,7 @@
       font-size: 26px;
       line-height: 1.2em;
       text-transform: uppercase;
+      width: 100%;
     }
     .intro h2{
       font-size: 14px;
@@ -307,16 +304,30 @@
       background-image: url('img/logo.jxr');
     }
     @media only screen and (max-width: 400px) {
+      .logoContainer{
+        width: 0;
+      }
+      .logo{
+        transform: translateX(-50%);
+      }
+      .intro_title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        height: 56px;
+      }
+      .intro_data{
+        height: 91px;
+      }
       .framework_button:hover:after,
       .framework_button:focus:after{
         opacity: 0.3
       }
     }
     @media only screen and (min-width: 401px) {
-      #container{
-        grid-template-rows: 240px minmax(min-content, max-content) auto minmax(min-content, max-content);
-      }
       .header{
+        height : 240px;
         padding: 20px 20px 0;
       }
       .header:before{
@@ -324,6 +335,7 @@
       }
       .logo{
         padding: 12px;
+
       }
       .intro_data{
         margin-top: 8px;
@@ -340,9 +352,6 @@
       .language a{
         margin-left: 6px;
         font-size: 16px;
-      }
-      .header{
-        justify-content: flex-start;
       }
       .intro{
         display: grid;
@@ -394,8 +403,10 @@
         <a href="#">JA</a>
       </div>
       <header class="header">
-        <div class="logo">
+        <div class="logoContainer">
+          <div class="logo">
             <div class="logo-content"></div>
+          </div>
         </div>
       </header>
       <section class="intro">
