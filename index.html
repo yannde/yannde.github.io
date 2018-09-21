@@ -424,7 +424,6 @@
         </div>
       </section>
       <section class="main">
-          <div id="homeId"></div>
         <div class="frameworks">
           <h2>
             <Button tabindex="0" type="button" aria-label="React" class="framework_button" type="button" onclick="loadScript('/react/react.js','react')">
@@ -476,81 +475,59 @@
         container.style.transition = "min-height 100ms";
       }, 100);
       window.onscroll = function() {
-        if( document.getElementById("homeId")){
-          var test1 = "test1";
-          if(document.getElementById("container")){
-            test1 = document.getElementById("container").scrollHeight;
+        var now = new Date().getTime();
+        if (!scrollTimer && !reScrollTimer) {
+          if (now - lastScrollFireTime > (3 * minScrollTime)) {
+            processScroll();
+            lastScrollFireTime = now;
           }
-       //   document.getElementById("homeId").innerHTML = measure + " " + test1 + " " + window.innerHeight;
+          scrollTimer = setTimeout(function() {
+            scrollTimer = null;
+            lastScrollFireTime = new Date().getTime();
+            processScroll();
+          }, minScrollTime);
         }
-        if(!container){
-          container = document.getElementById("container");
-          if(!container){
-            return
-          }
-        }
-
-        if(measure >= container.scrollHeight){
-          var now = new Date().getTime();
-
-          if (!scrollTimer && !reScrollTimer) {
-            if (now - lastScrollFireTime > (3 * minScrollTime)) {
-              processScroll();
-              lastScrollFireTime = now;
+        if (!reScrollTimer) {
+          reScrollTimer = setTimeout(function() {
+            reScrollTimer = null;
+            container = document.getElementById("container");
+            if(!container){
+              return;
             }
-            scrollTimer = setTimeout(function() {
-              scrollTimer = null;
-              lastScrollFireTime = new Date().getTime();
-              processScroll();
-            }, minScrollTime);
-          }
-          if (!reScrollTimer) {
-            reScrollTimer = setTimeout(function() {
-              reScrollTimer = null;
-              if(!container){
-                container = document.getElementById("container");
-                if(!container){
-                  return
-                }
-              }
-              document.getElementById("homeId").innerHTML = container.scrollHeight + " " + window.innerHeight;
-              if(container.scrollHeight >= window.innerHeight){
-                scrollTo(document.body, 0, 400);
-              }
-            }, 1000);
-          }
+            if(container.scrollHeight >= window.innerHeight){
+              scrollTo(document.body, 0, 400);
+            }
+          }, 1000);
         }
       };
       window.onresize = function() {
-        if(measure > container.scrollHeight){
-          processScroll();
-        }
+        processScroll();
       }
       function processScroll() {
+        container = document.getElementById("container");
         if(!container){
-          container = document.getElementById("container");
-          if(!container){
-            return
-          }
+          return
         }
-        container.style.minHeight = window.innerHeight + "px";
+        if(measure >= container.scrollHeight){
+          container.style.minHeight = window.innerHeight + "px";
+        }
       }
     
       function scrollTo(element, to, duration) {
-          var start = element.scrollTop,
-              change = to - start,
-              currentTime = 0,
-              increment = 20;
-              
-          var animateScroll = function(){        
-              currentTime += increment;
-              var val = Math.easeInOutQuad(currentTime, start, change, duration);
-              element.scrollTop = val;
-              if(currentTime < duration) {
-                  setTimeout(animateScroll, increment);
-              }
-          };
-          animateScroll();
+        var start = element.scrollTop,
+            change = to - start,
+            currentTime = 0,
+            increment = 20;
+            
+        var animateScroll = function(){        
+            currentTime += increment;
+            var val = Math.easeInOutQuad(currentTime, start, change, duration);
+            element.scrollTop = val;
+            if(currentTime < duration) {
+                setTimeout(animateScroll, increment);
+            }
+        };
+        animateScroll();
       }
 
       Math.easeInOutQuad = function (t, b, c, d) {
