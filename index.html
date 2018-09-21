@@ -507,6 +507,13 @@
           if (!reScrollTimer) {
             reScrollTimer = setTimeout(function() {
               reScrollTimer = null;
+              if(!container){
+                container = document.getElementById("container");
+                if(!container){
+                  return
+                }
+              }
+              document.getElementById("homeId").innerHTML = container.scrollHeight + window.innerHeight;
               if(container.scrollHeight >= window.innerHeight){
                 scrollTo(document.body, 0, 400);
               }
@@ -520,6 +527,12 @@
         }
       }
       function processScroll() {
+        if(!container){
+          container = document.getElementById("container");
+          if(!container){
+            return
+          }
+        }
         container.style.minHeight = window.innerHeight + "px";
       }
     
