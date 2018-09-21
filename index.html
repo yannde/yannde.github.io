@@ -424,7 +424,7 @@
         </div>
       </section>
       <section class="main">
-          <div className="homeId"></div>
+          <div id="homeId"></div>
         <div class="frameworks">
           <h2>
             <Button tabindex="0" type="button" aria-label="React" class="framework_button" type="button" onclick="loadScript('/react/react.js','react')">
@@ -463,7 +463,7 @@
     }
 
     var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-    if(iOS){
+    if(iOS || !iOS){
       var container = document.getElementById("container");
       var measure = document.getElementById("measure").scrollHeight;
       var scrollTimer,
