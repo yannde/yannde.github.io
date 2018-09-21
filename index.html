@@ -196,7 +196,7 @@
       font-size: 1.6em;
     }
     .intro_data{
-      margin-top: 2vw;
+      margin-top: 4px;
     }
     .intro p{
       text-align: center;
@@ -304,7 +304,7 @@
     .js.jpegxr.no-webp.no-jpeg2000 .logo-content {
       background-image: url('img/logo.jxr');
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 414px) {
       .logoContainer{
         width: 0;
       }
@@ -326,7 +326,7 @@
         opacity: 0.3
       }
     }
-    @media only screen and (min-width: 401px) {
+    @media only screen and (min-width: 415px) {
       .header{
         height : 240px;
         padding: 20px 20px 0;
@@ -475,6 +475,12 @@
         container.style.transition = "min-height 100ms";
       }, 100);
       window.onscroll = function() {
+        if(!container){
+          container = document.getElementById("container");
+          if(container){
+            return
+          }
+        }
         if(measure > container.scrollHeight){
           var now = new Date().getTime();
 
