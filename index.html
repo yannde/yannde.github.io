@@ -462,7 +462,7 @@
     }
 
     var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-    if(iOS){
+    if(!iOS){
       var container = document.getElementById("container");
       var measure = document.getElementById("measure").scrollHeight;
       var scrollTimer,
@@ -477,7 +477,7 @@
       window.onscroll = function() {
         if(!container){
           container = document.getElementById("container");
-          if(container){
+          if(!container){
             return
           }
         }
