@@ -424,6 +424,7 @@
         </div>
       </section>
       <section class="main">
+          <div className="homeId"></div>
         <div class="frameworks">
           <h2>
             <Button tabindex="0" type="button" aria-label="React" class="framework_button" type="button" onclick="loadScript('/react/react.js','react')">
@@ -475,13 +476,20 @@
         container.style.transition = "min-height 100ms";
       }, 100);
       window.onscroll = function() {
+        if( document.getElementById("homeId")){
+          var test1 = "test1";
+          if(document.getElementById("container")){
+            test1 = document.getElementById("container").scrollHeight;
+          }
+          document.getElementById("homeId").innerHTML = measure + " " + test1 + " " + window.innerHeight;
+        }
         if(!container){
           container = document.getElementById("container");
           if(!container){
             return
           }
         }
-        console.log("ok");
+
         if(measure > container.scrollHeight){
           var now = new Date().getTime();
 
