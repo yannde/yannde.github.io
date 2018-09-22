@@ -489,7 +489,9 @@
     var lang;
     function loadScript(src,pushState = null){
       if(pushState){
-        document.getElementById("loader").classList.add("active").focus();
+        let loader = document.getElementById("loader")
+        loader.classList.add("active");
+        loader.focus();
         if(lang){
           pushState += "?lang=" + lang;
         }
