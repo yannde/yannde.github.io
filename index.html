@@ -187,23 +187,23 @@
     }
     .intro_title{
       width: 100%;
-      text-align: center;
     }
     .intro h1{
       font-size: 26px;
       line-height: 1.2em;
       text-transform: uppercase;
-      width: 100%;
+      width: 100vw;
     }
     .intro h2{
       font-size: 14px;
       color: #3FDBAC;
       text-transform: uppercase;
+      width: 100vw;
     }
     .intro h2 span > span > span{
       display: inline-block;
     }
-    .intro h2 span > span > span::first-letter{
+    .intro h2 span > span::first-letter{
       font-size: 1.6em;
     }
     .intro_data{
@@ -351,10 +351,18 @@
       }
       .intro_title{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+        align-items: center;
+        text-align: left;
+        margin: 0 50%;
         height: 56px;
+      }
+      .intro_title_center{
+        width: 0;
+      }
+      .intro_title_center h1 > span,
+      .intro_title_center h2 > span{
+        display: inline-block;
+        transform: translateX(-50%);
       }
       .intro_data{
         height: 91px;
@@ -375,6 +383,9 @@
       .logo{
         padding: 12px;
 
+      }
+      .intro_title_center{
+        text-align: center;
       }
       .intro_data{
         margin-top: 8px;
@@ -402,7 +413,12 @@
         flex-wrap: wrap;
         align-content: center;
       }
-      .intro_title > *,
+      .intro_title_center{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        text-align: left;
+      }
       .intro_data > p{
         width: 100%;
         text-align: left;
