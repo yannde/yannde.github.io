@@ -554,7 +554,7 @@
             if(!container){
               return;
             }
-            if(container.scrollHeight >= window.innerHeight){
+            if(container.scrollHeight >= window.innerHeight && container.scrollHeight <= measure){
               scrollTo(document.body, 0, 400);
             }
           }, 1000);
