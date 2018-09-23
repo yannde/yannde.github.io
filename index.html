@@ -101,6 +101,16 @@
       max-width: 1120px;
       margin: 0 auto;
     }
+    #container:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 37vw;
+      background-color: #fff;
+      z-index: 0;
+    }
     .language{
       position: absolute;
       top: 16px;
@@ -117,16 +127,6 @@
       height: 60vw;
       padding: 5vw 50vw 0;
       box-sizing: border-box;
-    }
-    .header:before{
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 37vw;
-      background-color: #fff;
-      z-index: 0;
     }
     .logo{
       height: 50vw;
@@ -365,12 +365,12 @@
       }
     }
     @media only screen and (min-width: 415px) {
+      #container:before{
+        height: 120px;
+      }
       .header{
         height : 240px;
         padding: 20px 20px 0;
-      }
-      .header:before{
-        height: 120px;
       }
       .logo{
         padding: 12px;
