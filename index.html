@@ -335,6 +335,14 @@
       background-image: url('img/logo.jxr');
     }
     @media only screen and (max-width: 414px) {
+      .language{
+        top: 4vw;
+        right: 6vw;
+      }
+      .language a{
+        margin-left: 2vw;
+        font-size: 5vw;
+      }
       .logoContainer{
         width: 0;
       }
@@ -524,7 +532,7 @@
         container.style.minHeight = window.innerHeight + "px";
       setTimeout(function() {
         scrollTo(document.body, 0, 400); 
-        container.style.transition = "min-height 100ms";
+        container.style.transition = "min-height 250ms";
       }, 100);
       window.onscroll = function() {
         var now = new Date().getTime();
