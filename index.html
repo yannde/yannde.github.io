@@ -516,15 +516,15 @@
     }
 
     function loadAngular(){
-      document.getElementsByTagName('base')[0].setAttribute("href", "/angular/");
-      loadScript('/angular/runtime.js');
-      loadScript('/angular/polyfills.js');
-      loadScript('/angular/main.js','angular/');
       var link = document.createElement('link');
       link.href = '/angular/styles.css';
       link.rel = 'stylesheet';
       var s = document.getElementsByTagName('link')[0];
       s.parentNode.insertBefore(link, s);
+      loadScript('/angular/runtime.js');
+      loadScript('/angular/polyfills.js');
+      loadScript('/angular/main.js','angular/');
+      document.getElementsByTagName('base')[0].setAttribute("href", "/angular/");
     }
     function changeLang(val){
       event.preventDefault;
