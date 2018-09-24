@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <base href="/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yann De Ceukelaire - Resume</title>
+  <meta name="description" content="Yann De Ceukelaire - Resume" />
+  <style>
+    @keyframes loader {
+      0% {
+        transform: scale(1, 1);
+      }
+
+      75% {
+        transform: scale(0, 1);
+      }
+
+      100% {
+        transform: scale(0, 1);
+      }
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    a,
+    a:link,
+    a:hover,
+    a:active,
+    a:focus,
+    a:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    body {
+      font-family: "Lato", "Helvetica", "Arial", sans-serif;
+      line-height: 1.4em;
+      background-color: #303D4E !important;
+      color: #fff;
+    }
+
+    #measure {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #container {
+      display: grid;
+      grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) auto minmax(min-content, max-content);
+      min-height: 100vh;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    #container:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 37vw;
+      background-color: #fff;
+      z-index: -1;
+    }
+
+    .language {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      z-index: 2;
+    }
+
+    .language a {
+      color: #303D4E;
+      text-decoration: none;
+      margin-left: 8px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .header {
+      height: 60vw;
+      padding: 5vw 50vw 0;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      height: 50vw;
+      width: 50vw;
+      max-width: 200px;
+      max-height: 200px;
+      position: relative;
+      box-sizing: border-box;
+      padding: 3vw;
+      background-color: #fff;
+      border-radius: 100%;
+      border: 2px solid #3FDBAC;
+    }
+
+    .js .logo-content {
+      background-image: none;
+    }
+
+    .logo:before,
+    .logo:after {
+      content: "";
+      top: -2px;
+      height: 50vw;
+      max-height: 200px;
+      width: 25vw;
+      max-width: 100px;
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+    }
+
+    .logo:before {
+      left: -2px;
+      border: 2px solid #3FDBAC;
+      border-top-left-radius: 100% 50%;
+      border-bottom-left-radius: 100% 50%;
+      border-right: 0;
+      transform: rotate(20deg);
+      transform-origin: center right;
+    }
+
+    .logo:after {
+      right: -2px;
+      border: 2px solid #49C3FF;
+      border-top-right-radius: 100% 50%;
+      border-bottom-right-radius: 100% 50%;
+      border-left: 0;
+      transform: rotate(20deg);
+      transform-origin: center left;
+    }
+
+    .logo-content {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background-color: #EAF3F2;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      z-index: 99999;
+    }
+
+    .intro {
+      z-index: 1;
+    }
+
+    .intro_title {
+      width: 100%;
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-size: 26px;
+      line-height: 1.2em;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    .intro h2 {
+      font-size: 14px;
+      color: #3FDBAC;
+      text-transform: uppercase;
+    }
+
+    .intro h2 span>span>span {
+      display: inline-block;
+    }
+
+    .intro h2 span>span>span::first-letter {
+      font-size: 1.6em;
+    }
+
+    .intro_data {
+      margin-top: 4px;
+    }
+
+    .intro p {
+      text-align: center;
+    }
+
+    .intro_sns svg {
+      margin-top: 10px;
+    }
+
+    .intro_sns svg:not(:last-child) {
+      margin-right: 6px;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+
+    .main h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .frameworks {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .frameworks h2 {
+      font-size: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-height: 144px;
+    }
+
+    .frameworks h2>span {
+      color: #49C3FF;
+      width: 100%;
+      text-align: center;
+      margin-top: 6px;
+      margin-bottom: 4px;
+    }
+
+    .framework_button {
+      height: 112px;
+      background-color: #303D4E;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 8px 24px;
+      width: 112px;
+      box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+      border-radius: 50%;
+      box-sizing: border-box;
+      cursor: pointer;
+      margin: 0;
+      display: inline-flex;
+      outline: none;
+      position: relative;
+      user-select: none;
+      align-items: center;
+      vertical-align: middle;
+      justify-content: center;
+      -moz-appearance: none;
+      text-decoration: none;
+      -webkit-appearance: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .framework_button:active {
+      box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    .framework_button:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-sizing: border-box;
+      transition: opacity 200ms;
+      background-color: #fff;
+      opacity: 0;
+    }
+
+    .framework_button:active:after {
+      opacity: 0.3
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+      height: 44px;
+    }
+
+    #loader {
+      position: fixed;
+      z-index: 9;
+      background: rgba(255, 255, 255, 0.2);
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 200ms;
+    }
+
+    #loader.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .no-js .logo-content,
+    .js.no-webp .logo-content {
+      background-image: url('img/logo.png');
+    }
+
+    .js.webp .logo-content {
+      background-image: url('img/logo.webp');
+    }
+
+    .js.jpeg2000.no-webp .logo-content {
+      background-image: url('img/logo.jp2');
+    }
+
+    .js.jpegxr.no-webp.no-jpeg2000 .logo-content {
+      background-image: url('img/logo.jxr');
+    }
+
+    @media only screen and (max-width: 414px) {
+      .language {
+        top: 4vw;
+        right: 6vw;
+      }
+
+      .language a {
+        margin-left: 2vw;
+        font-size: 5vw;
+      }
+
+      .logoContainer {
+        width: 0;
+      }
+
+      .logo {
+        transform: translateX(-50%);
+      }
+
+      .intro_title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        height: 56px;
+      }
+
+      .intro_data {
+        height: 91px;
+      }
+
+      .framework_button:hover:after,
+      .framework_button:focus:after {
+        opacity: 0.3
+      }
+    }
+
+    @media only screen and (min-width: 415px) {
+      #container:before {
+        height: 120px;
+      }
+
+      .header {
+        height: 240px;
+        padding: 20px 20px 0;
+      }
+
+      .logo {
+        padding: 12px;
+
+      }
+
+      .intro_data {
+        margin-top: 8px;
+      }
+    }
+
+    @media only screen and (min-width: 560px) {
+      #measure {
+        display: none;
+      }
+
+      #container {
+        grid-template-columns: 240px auto;
+      }
+
+      .language a {
+        margin-left: 6px;
+        font-size: 16px;
+      }
+
+      .intro {
+        display: grid;
+        padding: 20px;
+        color: #303D4E;
+        grid-template-rows: 100px auto;
+      }
+
+      .intro_title {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+      }
+
+      .intro_title>*,
+      .intro_data>p {
+        width: 100%;
+        text-align: left;
+      }
+
+      .intro_data {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        color: #fff;
+      }
+
+      .intro_sns svg {
+        margin-top: 5px;
+      }
+
+      .main {
+        grid-column: 1 / span 2;
+      }
+
+      footer {
+        height: 30px;
+        grid-column: 1 / span 2;
+      }
+    }
+
+    @media only screen and (min-width: 1121px) {
+      .language {
+        right: calc(50vw - 536px);
+      }
+    }
+  </style>
+  <link href="styles.css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+  <div id="measure"></div>
+  <app-root id="spa">
+    <section id="container" class="smallHeader">
+      <div class="language">
+        <a href="static_en.html" onCLick="changeLang('en')">EN</a>
+        <a href="static_ja.html" onCLick="changeLang('ja')">JA</a>
+      </div>
+      <header class="header">
+        <div class="logoContainer">
+          <div class="logo">
+            <div class="logo-content"></div>
+          </div>
+        </div>
+      </header>
+      <section class="intro">
+        <div class="intro_title">
+          <h1><span><span>Yann De Ceukelaire</span></span></h1>
+          <h2><span><span><span>Front-end</span> <span>Engineer</span></span></span></h2>
+        </div>
+        <div class="intro_data">
+          <p>Fukuoka, Japan</p>
+          <p>email</p>
+          <p class="intro_sns">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="2em" width="2em">
+              <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="2em"
+              width="2em">
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+            </svg>
+          </p>
+        </div>
+      </section>
+      <div _ngcontent-c0="" class="complete">
+        <div _ngcontent-c0="" class="complete_element complete_element-left">
+          <app-about _ngcontent-c0="" class="content about" _nghost-c4="">
+            <h1 _ngcontent-c4=""><span _ngcontent-c4="" class="contentIcon">
+                <fa-icon _ngcontent-c4="" class="ng-fa-icon" ng-reflect-icon-prop="[object Object]"><svg aria-hidden="true"
+                    data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
+                  </svg></fa-icon>
+              </span>about</h1>
+            <div _ngcontent-c4="" class="stagger">
+              <p _ngcontent-c4="">I have a background in both IT (web development) and document management.</p>
+              <div _ngcontent-c4="" class="stagger">
+                <p _ngcontent-c4="">As a web developer I have a solid experience in the front-end development of SPA’s,
+                  keeping up with the latest technological developments and frameworks.</p>
+                <div _ngcontent-c4="" class="stagger">
+                  <p _ngcontent-c4="">Besides the purely technical side I have a healthy interest in UX ensuring that a
+                    smoothly working web application is also a good web application.</p>
+                  <div _ngcontent-c4="" class="stagger">
+                    <p _ngcontent-c4="" class="last">In my position as a content strategist I combined both fields,
+                      striving to satisfy and harmonize end-user, content provider, technician and management needs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </app-about>
+        </div>
+        <div _ngcontent-c0="" class="complete_element complete_element-right">
+          <app-work _ngcontent-c0="" class="content work" _nghost-c5="">
+            <div _ngcontent-c5="" class="connector">
+              <h1 _ngcontent-c5=""><span _ngcontent-c5="" class="contentIcon">
+                  <fa-icon _ngcontent-c5="" class="ng-fa-icon" ng-reflect-icon-prop="[object Object]"><svg aria-hidden="true"
+                      data-prefix="fas" data-icon="briefcase" class="svg-inline--fa fa-briefcase fa-w-16" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="currentColor" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path>
+                    </svg></fa-icon>
+                </span>work</h1>
+              <div _ngcontent-c5="" class="stagger">
+                <div _ngcontent-c5="" class="point_container">
+                  <div _ngcontent-c5="" class="point"></div>
+                  <div _ngcontent-c5="" class="point_date">2016<br _ngcontent-c5="">Pres</div>
+                  <div _ngcontent-c5="">
+                    <h2 _ngcontent-c5="">Front-end Developer</h2><span _ngcontent-c5="" class="point_school">Defide
+                      inc.</span><span _ngcontent-c5="" class="point_location">(Fukuoka, Japan)</span>
+                    <div _ngcontent-c5="" class="point_description">
+                      <p _ngcontent-c5="">Front end web development for mainly major companies using a variety of&nbsp;
+                        frameworks and technologies.</p>
+                      <ul _ngcontent-c5="" class="point_list">
+                        <li _ngcontent-c5="">Front end: HTML, SCSS, SVG, json, XML, Bootstrap, Material Design</li>
+                        <li _ngcontent-c5="">Javascript: jQuery, Angular 2+, backbone, react, typescript, jsx</li>
+                        <li _ngcontent-c5="">Tools: yarn, github, svn, Amazon S3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div _ngcontent-c5="" class="stagger">
+                  <div _ngcontent-c5="" class="point_container">
+                    <div _ngcontent-c5="" class="point"></div>
+                    <div _ngcontent-c5="" class="point_date">2002<br _ngcontent-c5="">2015</div>
+                    <div _ngcontent-c5="">
+                      <h2 _ngcontent-c5="">Web Developer</h2><span _ngcontent-c5="" class="point_school">Belgian
+                        Federal Police</span><span _ngcontent-c5="" class="point_location">(Brussels, Belgium)</span>
+                      <div _ngcontent-c5="" class="point_description">
+                        <ul _ngcontent-c5="" class="point_list">
+                          <li _ngcontent-c5="">Refurbish the document management system's front-end to meet
+                            today's&nbsp; standards and user expectations</li>
+                          <li _ngcontent-c5="">Web application to prototyping classifications</li>
+                          <li _ngcontent-c5="">Web application to map knowledge networks</li>
+                          <li _ngcontent-c5="">Develop applications for the creation of stats and newsletters (both
+                            mail and&nbsp; print)</li>
+                          <li _ngcontent-c5="">Support of the analysis and creation of several applications</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div _ngcontent-c5="" class="stagger">
+                    <div _ngcontent-c5="" class="point_container">
+                      <div _ngcontent-c5="" class="point"></div>
+                      <div _ngcontent-c5="" class="point_date">2012<br _ngcontent-c5="">2014</div>
+                      <div _ngcontent-c5="">
+                        <h2 _ngcontent-c5="">Content Strategist</h2><span _ngcontent-c5="" class="point_school">Belgian
+                          Federal Police</span><span _ngcontent-c5="" class="point_location">(Brussels, Belgium)</span>
+                        <div _ngcontent-c5="" class="point_description">
+                          <p _ngcontent-c5="">Project manager of the content strategy project for the intranet of the
+                            Belgian Federal Police</p>
+                          <ul _ngcontent-c5="" class="point_list">
+                            <li _ngcontent-c5="">Create a support base within the organization for a content strategy.</li>
+                            <li _ngcontent-c5="">Collect and analyze all stakeholder requirements.</li>
+                            <li _ngcontent-c5="">Lay the foundations of an intranet content strategy and facilitate a
+                              gradual&nbsp; implementation.</li>
+                            <li _ngcontent-c5="">Ensure that the tools are available to put it into practice.</li>
+                            <li _ngcontent-c5="">Guarantee its development and continuity.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div _ngcontent-c5="" class="stagger">
+                      <div _ngcontent-c5="" class="point_container point_container-last">
+                        <div _ngcontent-c5="" class="point"></div>
+                        <div _ngcontent-c5="" class="point_date">2002</div>
+                        <div _ngcontent-c5="">
+                          <h2 _ngcontent-c5="">Library Assistant</h2><span _ngcontent-c5="" class="point_school">Belgian
+                            Federal Police</span><span _ngcontent-c5="" class="point_location">(Brussels, Belgium)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </app-work>
+          <app-education _ngcontent-c0="" class="content education" _nghost-c6="">
+            <div _ngcontent-c6="" class="connector">
+              <h1 _ngcontent-c6=""><span _ngcontent-c6="" class="contentIcon">
+                  <fa-icon _ngcontent-c6="" class="ng-fa-icon" ng-reflect-icon-prop="[object Object]"><svg aria-hidden="true"
+                      data-prefix="fas" data-icon="graduation-cap" class="svg-inline--fa fa-graduation-cap fa-w-20"
+                      role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path fill="currentColor" d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path>
+                    </svg></fa-icon>
+                </span>education</h1>
+              <div _ngcontent-c6="" class="stagger">
+                <div _ngcontent-c6="" class="point_container">
+                  <div _ngcontent-c6="" class="point"></div>
+                  <div _ngcontent-c6="" class="point_date">2015<br _ngcontent-c6="">2017</div>
+                  <div _ngcontent-c6="">
+                    <h2 _ngcontent-c6="">Japanese</h2><span _ngcontent-c6="" class="point_school">YMCA Fukuoka Language
+                      School</span><span _ngcontent-c6="" class="point_location">(Fukuoka, Japan)</span>
+                  </div>
+                </div>
+                <div _ngcontent-c6="" class="stagger">
+                  <div _ngcontent-c6="" class="point_container">
+                    <div _ngcontent-c6="" class="point"></div>
+                    <div _ngcontent-c6="" class="point_date">2009<br _ngcontent-c6="">2010</div>
+                    <div _ngcontent-c6="">
+                      <h2 _ngcontent-c6="">Web Developer Associate</h2><span _ngcontent-c6="" class="point_school">IFOSUP</span><span
+                        _ngcontent-c6="" class="point_location">(Wavre, Belgium)</span>
+                    </div>
+                  </div>
+                  <div _ngcontent-c6="" class="stagger">
+                    <div _ngcontent-c6="" class="point_container">
+                      <div _ngcontent-c6="" class="point"></div>
+                      <div _ngcontent-c6="" class="point_date">1998<br _ngcontent-c6="">1999</div>
+                      <div _ngcontent-c6="">
+                        <h2 _ngcontent-c6="">Music</h2><span _ngcontent-c6="" class="point_school">Hedbergska High
+                          School</span><span _ngcontent-c6="" class="point_location">(Sundsvall, Sweden)</span>
+                      </div>
+                    </div>
+                    <div _ngcontent-c6="" class="stagger">
+                      <div _ngcontent-c6="" class="point_container point_container-last">
+                        <div _ngcontent-c6="" class="point"></div>
+                        <div _ngcontent-c6="" class="point_date">1992<br _ngcontent-c6="">1998</div>
+                        <div _ngcontent-c6="">
+                          <h2 _ngcontent-c6="">Economics - Languages</h2><span _ngcontent-c6="" class="point_school">Royal
+                            Atheneum</span><span _ngcontent-c6="" class="point_location">(Zaventem, Belgium)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </app-education>
+        </div>
+        <div _ngcontent-c0="" class="complete_element complete_element-left">
+          <app-skills _ngcontent-c0="" class="content skills" _nghost-c7="">
+            <h1 _ngcontent-c7=""><span _ngcontent-c7="" class="contentIcon">
+                <fa-icon _ngcontent-c7="" class="ng-fa-icon" ng-reflect-icon-prop="[object Object]"><svg aria-hidden="true"
+                    data-prefix="fas" data-icon="lightbulb" class="svg-inline--fa fa-lightbulb fa-w-11" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                    <path fill="currentColor" d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"></path>
+                  </svg></fa-icon>
+              </span>skills</h1>
+            <div _ngcontent-c7="" class="stagger">
+              <div _ngcontent-c7="" class="rating">
+                <app-circle _ngcontent-c7="" class="circle" val="9" _nghost-c11="" ng-reflect-val="9">
+                  <div _ngcontent-c11="" class="circleText">9</div>
+                  <div _ngcontent-c11="" class="svgCircle-9"><svg _ngcontent-c11="" viewBox="0 0 36 36" width="100%"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path _ngcontent-c11="" class="svgCircle" d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    </svg></div>
+                </app-circle>Web Development
+              </div>
+              <div _ngcontent-c7="" class="stagger">
+                <div _ngcontent-c7="" class="rating">
+                  <app-circle _ngcontent-c7="" class="circle" val="7" _nghost-c11="" ng-reflect-val="7">
+                    <div _ngcontent-c11="" class="circleText">7</div>
+                    <div _ngcontent-c11="" class="svgCircle-7"><svg _ngcontent-c11="" viewBox="0 0 36 36" width="100%"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path _ngcontent-c11="" class="svgCircle" d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                      </svg></div>
+                  </app-circle>Project Management
+                </div>
+                <div _ngcontent-c7="" class="stagger">
+                  <div _ngcontent-c7="" class="rating">
+                    <app-circle _ngcontent-c7="" class="circle" val="7" _nghost-c11="" ng-reflect-val="7">
+                      <div _ngcontent-c11="" class="circleText">7</div>
+                      <div _ngcontent-c11="" class="svgCircle-7"><svg _ngcontent-c11="" viewBox="0 0 36 36" width="100%"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path _ngcontent-c11="" class="svgCircle" d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        </svg></div>
+                    </app-circle>UX Design
+                  </div>
+                  <div _ngcontent-c7="" class="stagger">
+                    <div _ngcontent-c7="" class="rating">
+                      <app-circle _ngcontent-c7="" class="circle" val="8" _nghost-c11="" ng-reflect-val="8">
+                        <div _ngcontent-c11="" class="circleText">8</div>
+                        <div _ngcontent-c11="" class="svgCircle-8"><svg _ngcontent-c11="" viewBox="0 0 36 36" width="100%"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path _ngcontent-c11="" class="svgCircle" d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                          </svg></div>
+                      </app-circle>Content Strategy
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </app-skills>
+          <app-hobbies _ngcontent-c0="" class="content hobbies" _nghost-c8="">
+            <h1 _ngcontent-c8=""><span _ngcontent-c8="" class="contentIcon">
+                <fa-icon _ngcontent-c8="" class="ng-fa-icon" ng-reflect-icon-prop="[object Object]"><svg aria-hidden="true"
+                    data-prefix="fas" data-icon="music" class="svg-inline--fa fa-music fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M511.99 32.01c0-21.71-21.1-37.01-41.6-30.51L150.4 96c-13.3 4.2-22.4 16.5-22.4 30.5v261.42c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64V214.31l256-75.02v184.63c-10.05-2.38-20.72-3.92-32-3.92-53.02 0-96 28.65-96 64s42.98 64 96 64 96-28.65 96-64l-.01-351.99z"></path>
+                  </svg></fa-icon>
+              </span>hobbies</h1>
+          </app-hobbies>
+        </div>
+      </div>
+      <footer>Footer</footer>
+    </section>
+  </app-root>
+</body>
+
+</html>
