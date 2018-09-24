@@ -170,6 +170,18 @@
       background-color: #303D4E !important;
       color: #fff;
     }
+    body::-webkit-scrollbar {
+      border-radius: 3.5px;
+      width: 7px;
+    }
+    body::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+    body::-webkit-scrollbar-thumb {
+      border-radius: 2.5px;
+      width: 5px;
+      background-color: #256280;
+    }
 
     #measure {
       position: absolute;
@@ -213,6 +225,9 @@
       margin-left: 8px;
       font-size: 20px;
       cursor: pointer;
+    }
+    .language a:hover{
+      color: #49C3FF;
     }
 
     .header {
