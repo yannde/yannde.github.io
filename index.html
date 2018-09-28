@@ -83,8 +83,9 @@
     body{
       font-family: "Lato", "Helvetica", "Arial", sans-serif;
       line-height: 1.4em;
-      background-color: #303D4E !important;
-      color: #fff;
+      background-color: #FBF8FB !important;
+      overflow: overlay;
+      color: #303D4E;
     }
     body::-webkit-scrollbar {
       border-radius: 3px;
@@ -93,7 +94,7 @@
     body::-webkit-scrollbar-thumb {
       border-radius: 3px;
       width: 6px;
-      background-color: #256280;
+      background-color: #AE6DFE;
     }
     #measure{
       position: absolute;
@@ -118,7 +119,7 @@
       left: 0;
       right: 0;
       height: 37vw;
-      background-color: #fff;
+      background: linear-gradient(45deg, rgba(254,87,155,1) 0%,rgba(255,170,104,1) 100%);
       z-index: -1;
     }
     .language{
@@ -127,20 +128,28 @@
       right: 24px;
       z-index: 2;
     }
-    .language_link{
-      color: #303D4E;
+    a.language_link{
       text-decoration: none;
       margin-left: 8px;
       font-size: 20px;
       cursor: pointer;
+      color: #fff;
     }
-    .language_link:hover{
-      color: #49C3FF;
+    a.language_link:hover{
+      color: #AE6DFE;
+    }
+    a.language_link.selected{
+      pointer-events: none;
+      color: #FF3A4C;
+      text-shadow: 1px 1px 0 rgba(0,0,0,0.16), 0 0 1px rgba(0,0,0,0.08);
     }
     .header{
       height: 60vw;
       padding: 5vw 50vw 0;
       box-sizing: border-box;
+    }
+    .header:focus {
+      outline: 0;
     }
     .logo{
       height: 50vw;
@@ -152,7 +161,8 @@
       padding: 3vw;
       background-color: #fff;
       border-radius: 100%;
-      border: 2px solid #3FDBAC;
+      border: 2px solid #AE6DFE;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     }
     .js .logo-content {
       background-image: none;
@@ -171,7 +181,7 @@
     }
     .logo:before{
         left: -2px;
-        border: 2px solid #3FDBAC;
+        border: 2px solid #AE6DFE;
         border-top-left-radius: 100% 50%;
         border-bottom-left-radius: 100% 50%;
         border-right: 0;
@@ -180,12 +190,15 @@
     }
     .logo:after{
         right: -2px;
-        border: 2px solid #49C3FF;
+        border: 2px solid #FFAC34;
         border-top-right-radius: 100% 50%;
         border-bottom-right-radius: 100% 50%;
         border-left: 0;
         transform: rotate(20deg);
         transform-origin: center left;
+    }
+    .logo:focus {
+      outline: 0;
     }
     .logo-content{
         width: 100%;
@@ -209,15 +222,15 @@
       text-transform: uppercase;
       width: 100%;
     }
-    .intro h2{
+    .intro_subTitle{
       font-size: 14px;
-      color: #3FDBAC;
+      color: #AE6DFE;
       text-transform: uppercase;
     }
-    .intro h2 span > span > span{
+    .intro_subTitle span > span > span{
       display: inline-block;
     }
-    .intro h2 span > span > span::first-letter{
+    .intro_subTitle span > span > span::first-letter{
       font-size: 1.6em;
     }
     .intro_data{
@@ -258,7 +271,7 @@
         max-height: 144px;
     }
     .frameworks h2 > span{
-      color: #49C3FF;
+      color: #FF9C73;
       width: 100%;
       text-align: center;
       margin-top: 6px;
@@ -424,13 +437,16 @@
       .intro{
         display: grid;
         padding: 20px;
-        color: #303D4E;
         grid-template-rows: 100px auto;
       }
       .intro_title{
         display: flex;
         flex-wrap: wrap;
         align-content: center;
+      }
+      .intro_mainTitle,
+      .intro_subTitle{
+        color: #fff;
       }
       .intro_title > *,
       .intro_data > p{
@@ -442,7 +458,6 @@
         display: flex;
         flex-wrap: wrap;
         align-content: center;
-        color: #fff;
       }
       .intro_sns svg {
         margin-top: 5px;
@@ -469,13 +484,13 @@
     <section id="container">
       <div id="loader">
         <svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling">
-          <circle cx="50" cy="50" fill="none" stroke="#49C3FF" stroke-width="10" r="30" stroke-dasharray="141.37166941154067 49.12388980384689" transform="rotate(300.549 50 50)">
+          <circle cx="50" cy="50" fill="none" stroke="#FF9C73" stroke-width="10" r="30" stroke-dasharray="141.37166941154067 49.12388980384689" transform="rotate(300.549 50 50)">
             <animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"/>
           </circle>
         </svg>
       </div>
       <div class="language">
-        <a href="#" onCLick="changeLang('en')" class="language_link">EN</a>
+        <a href="#" onCLick="changeLang('en')" class="language_link selected">EN</a>
         <a href="#" onCLick="changeLang('ja')" class="language_link">JA</a>
       </div>
       <header class="header">
