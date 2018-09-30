@@ -7,7 +7,7 @@ var lang;
 function loadScript(src, pushState = null) {
     if (pushState) {
         loadStyle();
-        var loader = document.getElementById("loader")
+        var loader = document.getElementById("loader");
         loader.classList.add("active");
         loader.focus();
         if (lang) {
