@@ -196,6 +196,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     right: 0;
     height: 37vw;
+    background-color: #FE579D;
     background: linear-gradient(45deg, #FE579D 0%, #FFAA68 100%);
     z-index: 1;
 }
