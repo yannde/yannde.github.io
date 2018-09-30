@@ -25,6 +25,7 @@ function loadScript(src, pushState = null) {
 
 function loadStyle() {
     var head = document.getElementsByTagName("head")[0];
+    var link = document.createElement('link');
     link.href = '/styles/styles.css';
     link.rel = 'stylesheet';
     head.appendChild(link);
