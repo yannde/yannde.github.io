@@ -627,6 +627,7 @@
       link.rel = 'stylesheet';
       var s = document.getElementsByTagName('link')[0];
       s.parentNode.insertBefore(link, s);
+      loadScript('/angular/zone.js');
       loadScript('/angular/runtime.js');
       loadScript('/angular/polyfills.js');
       loadScript('/angular/main.js','angular/');
