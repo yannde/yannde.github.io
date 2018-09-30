@@ -469,7 +469,7 @@ footer {
     color: #303D4E;
     font-size: 14px;
     height: 44px;
-    transition: height 500ms 500ms;
+    transition: height 600ms;
 }
 
 #loader {
