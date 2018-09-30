@@ -205,7 +205,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: 16px;
     right: 24px;
-    z-index: 2;
+    z-index: 10;
 }
 
 a.language_link {
@@ -470,7 +470,6 @@ footer {
     color: #303D4E;
     font-size: 14px;
     height: 44px;
-    transition: height 600ms;
 }
 
 #loader {
