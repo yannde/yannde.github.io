@@ -6,6 +6,7 @@ loadScript('https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js');
 var lang;
 function loadScript(src, pushState = null) {
     if (pushState) {
+        loadStyle();
         var loader = document.getElementById("loader")
         loader.classList.add("active");
         loader.focus();
@@ -20,6 +21,13 @@ function loadScript(src, pushState = null) {
     script.async = 'true';
     var head = document.getElementsByTagName("head")[0];
     head.appendChild(script);
+}
+
+function loadStyle() {
+    var head = document.getElementsByTagName("head")[0];
+    link.href = '/styles/styles.css';
+    link.rel = 'stylesheet';
+    head.appendChild(link);
 }
 
 function loadAngular() {
