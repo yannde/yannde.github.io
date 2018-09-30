@@ -499,19 +499,19 @@ footer {
 
 .no-js .logo-content:before,
 .js.no-webp .logo-content:before {
-    background-image: url('img/logo.png');
+    background-image: url('/img/logo.png');
 }
 
 .js.webp .logo-content:before {
-    background-image: url('img/logo.webp');
+    background-image: url('/img/logo.webp');
 }
 
 .js.jpeg2000.no-webp .logo-content:before {
-    background-image: url('img/logo.jp2');
+    background-image: url('/img/logo.jp2');
 }
 
 .js.jpegxr.no-webp.no-jpeg2000 .logo-content:before {
-    background-image: url('img/logo.jxr');
+    background-image: url('/img/logo.jxr');
 }
 
 @media only screen and (max-width: 414px) {
