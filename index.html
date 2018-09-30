@@ -618,7 +618,7 @@
       script.type = 'text/javascript';
       script.async = 'true';
       var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertAfter(script, s);
+      s.parentNode.append(script);
     }
 
     function loadAngular(){
