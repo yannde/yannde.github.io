@@ -91,9 +91,12 @@
   </app-root>
   <noscript>Your browser does not support JavaScript!</noscript>
   <script type="text/javascript" src="/scripts/scripts.min.js"></script>
-  <script type="text/javascript" src="./runtime.js"></script>
-  <script type="text/javascript" src="./polyfills.js"></script>
-  <script type="text/javascript" src="./main.js"></script>
+  <script type="text/javascript" src="/angular/runtime.js"></script>
+  <script type="text/javascript" src="/angular/polyfills.js"></script>
+  <script type="text/javascript" src="/angular/main.js"></script>
+  <script>
+    document.getElementsByTagName('base')[0].setAttribute("href", "/angular/");
+  </script>
 </body>
 
 </html>
