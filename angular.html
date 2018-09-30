@@ -606,7 +606,7 @@
     var lang;
     function loadScript(src,pushState = null){
       if(pushState){
-        let loader = document.getElementById("loader")
+        var loader = document.getElementById("loader")
         loader.classList.add("active");
         loader.focus();
         if(lang){
@@ -618,20 +618,38 @@
       script.src = src;
       script.type = 'text/javascript';
       script.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(script, s);
+      var head = document.getElementsByTagName("head")[0];
+      head.appendChild(script);
     }
 
     function loadAngular(){
+      var loader = document.getElementById("loader");
+      var done = false;
       var link = document.createElement('link');
+      var script = document.createElement('script');
+      var head = document.getElementsByTagName("head")[0];
+      loader.classList.add("active");
+      loader.focus();
       link.href = '/styles.css';
       link.rel = 'stylesheet';
-      var s = document.getElementsByTagName('link')[0];
-      s.parentNode.insertBefore(link, s);
-      loadScript('/angular/runtime.js');
-      loadScript('/angular/polyfills.js');
-      loadScript('/angular/main.js','angular/');
-      document.getElementsByTagName('base')[0].setAttribute("href", "/angular/");
+      head.appendChild(link);
+      script.src = '/angular/polyfills.js';
+      script.type = 'text/javascript';
+      script.async = 'true';
+      head.appendChild(script);
+      script.onload = script.onreadystatechange = function () {
+        if (!done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete")) {
+          done = true;
+          loadScript('/angular/runtime.js');
+          loadScript('/angular/main.js','angular/');
+          document.getElementsByTagName('base')[0].setAttribute("href", "/angular/");
+          // Handle memory leak in IE
+          script.onload = script.onreadystatechange = null;
+          if (head && script.parentNode) {
+            head.removeChild(script);
+          }
+        }
+      };
     }
     function changeLang(val){
       event.preventDefault;
