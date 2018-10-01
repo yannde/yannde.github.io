@@ -4,16 +4,16 @@ WebFontConfig = {
 loadScript('https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js');
 
 var lang;
-function loadScript(src, pushState = null) {
-    if (pushState) {
+function loadScript(src, replaceState = null) {
+    if (replaceState) {
         loadStyle();
         var loader = document.getElementById("loader");
         loader.classList.add("active");
         loader.focus();
         if (lang) {
-            pushState += "?lang=" + lang;
+            replaceState += "?lang=" + lang;
         }
-        history.pushState("", pushState, pushState);
+        history.replaceState("", replaceState, replaceState);
     }
     var script = document.createElement('script');
     script.src = src;
