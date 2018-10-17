@@ -340,6 +340,10 @@ a.language_link.selected {
     max-width: 85px;
 }
 
+.ja .intro_subTitle span > span > span{
+    max-width: none;
+}
+
 .intro_subTitle span>span>span::first-letter {
     font-size: 1.6em;
 }
