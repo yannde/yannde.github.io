@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80f50ae12bd3c1d63d13",
-    "url": "/game/css/app.85b5fe75.css"
+    "revision": "3307ccfea0b23dd0b9fb",
+    "url": "/game/css/app.bd4b7fd2.css"
   },
   {
     "revision": "cd54da6736991a1593e7",
@@ -148,7 +148,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game/img/dice-6-reverse.189cf5b8.svg"
   },
   {
-    "revision": "6ad0e3ac4062076cfc7a258e76bb5fd8",
+    "revision": "3eeaa18c88c9853f95dde13bb66d5017",
     "url": "/game/index.html"
   },
   {
@@ -156,8 +156,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game/js/about.a7201717.js"
   },
   {
-    "revision": "80f50ae12bd3c1d63d13",
-    "url": "/game/js/app.1339a1f4.js"
+    "revision": "3307ccfea0b23dd0b9fb",
+    "url": "/game/js/app.57b5d413.js"
   },
   {
     "revision": "cd54da6736991a1593e7",
