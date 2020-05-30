@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a343533708abd24bb898",
-    "url": "/game/css/app.2b4f9a0c.css"
+    "revision": "80f50ae12bd3c1d63d13",
+    "url": "/game/css/app.85b5fe75.css"
   },
   {
-    "revision": "35bcc96867b0d07388d8",
+    "revision": "cd54da6736991a1593e7",
     "url": "/game/css/chunk-vendors.ecf9ab8e.css"
   },
   {
@@ -120,39 +120,35 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game/fonts/materialdesignicons-webfont.ff13d121.woff"
   },
   {
-    "revision": "caf579ef53080fdb517a208cbc0332fe",
-    "url": "/game/img/dice-1-reverse.caf579ef.svg"
+    "revision": "623a8e4a30b28925d0674c76bc53eb4f",
+    "url": "/game/img/dice-1-reverse.623a8e4a.svg"
   },
   {
-    "revision": "8bbfb288098a286af8ba95d535b54b9b",
-    "url": "/game/img/dice-2-reverse.8bbfb288.svg"
+    "revision": "8c428148c5138f6bed5e2450e44dfec6",
+    "url": "/game/img/dice-2-reverse.8c428148.svg"
   },
   {
-    "revision": "4d3efcac2133e6b9c27e5e8c2a6b21cf",
-    "url": "/game/img/dice-3-reverse.4d3efcac.svg"
+    "revision": "1a37095bcb5f0ad5fd764d27ccc94b39",
+    "url": "/game/img/dice-3-reverse.1a37095b.svg"
   },
   {
-    "revision": "19660d6d6d71df2f1fa27e031c03896c",
-    "url": "/game/img/dice-4-reverse.19660d6d.svg"
+    "revision": "4ce93dfd0ce16d235c9b0091f37a4705",
+    "url": "/game/img/dice-4-reverse.4ce93dfd.svg"
   },
   {
-    "revision": "4bdba5cb70ce4b4118be6cf567ee1bcb",
-    "url": "/game/img/dice-5-reverse.4bdba5cb.svg"
+    "revision": "ce0e282cc90c63eb582db682ffadc6a2",
+    "url": "/game/img/dice-5-reverse.ce0e282c.svg"
   },
   {
     "revision": "f3988b5f4d6028d8fce9dde14606be33",
     "url": "/game/img/dice-5.f3988b5f.svg"
   },
   {
-    "revision": "ab9710a817fdeb601ca3a7220e2f2510",
-    "url": "/game/img/dice-6-reverse.ab9710a8.svg"
+    "revision": "189cf5b8e7024294d13882bebb24a808",
+    "url": "/game/img/dice-6-reverse.189cf5b8.svg"
   },
   {
-    "revision": "82b9c7a5a3f405032b1db71a25f67021",
-    "url": "/game/img/logo.82b9c7a5.png"
-  },
-  {
-    "revision": "984551b463844f2261a05f386898e883",
+    "revision": "6ad0e3ac4062076cfc7a258e76bb5fd8",
     "url": "/game/index.html"
   },
   {
@@ -160,12 +156,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game/js/about.a7201717.js"
   },
   {
-    "revision": "a343533708abd24bb898",
-    "url": "/game/js/app.eafd6ba2.js"
+    "revision": "80f50ae12bd3c1d63d13",
+    "url": "/game/js/app.1339a1f4.js"
   },
   {
-    "revision": "35bcc96867b0d07388d8",
-    "url": "/game/js/chunk-vendors.d150daed.js"
+    "revision": "cd54da6736991a1593e7",
+    "url": "/game/js/chunk-vendors.52c1c66f.js"
   },
   {
     "revision": "bd51f0dfe90d51a59a56ce26622a4c68",
