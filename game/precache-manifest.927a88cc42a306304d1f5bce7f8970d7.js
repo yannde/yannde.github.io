@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bdf01ec325cb4cf98186",
-    "url": "/game/css/app.03fb3b6b.css"
+    "revision": "872c64068f6e99b387b6",
+    "url": "/game/css/app.f7200411.css"
   },
   {
-    "revision": "cd54da6736991a1593e7",
+    "revision": "f94d796f1b1ea8dea86d",
     "url": "/game/css/chunk-vendors.ecf9ab8e.css"
   },
   {
@@ -120,60 +120,56 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game/fonts/materialdesignicons-webfont.ff13d121.woff"
   },
   {
-    "revision": "bad89d07852784d1d7b61bbf090904e6",
-    "url": "/game/img/attack-bottom.bad89d07.svg"
+    "revision": "e25a57ced0b9fa15ff6be49325cbf5e0",
+    "url": "/game/img/attack-bottom.e25a57ce.svg"
   },
   {
-    "revision": "f6e63d6a0d7fb27813729a7655d45465",
-    "url": "/game/img/attack-left.f6e63d6a.svg"
+    "revision": "3d9f3ebdd0662c32f40c3d5fe7419046",
+    "url": "/game/img/attack-left.3d9f3ebd.svg"
   },
   {
-    "revision": "a5f4e4f9f44ff4d0497a4d683244da3f",
-    "url": "/game/img/attack-right.a5f4e4f9.svg"
+    "revision": "b8d374caa981457995ea7edd080c2b81",
+    "url": "/game/img/attack-right.b8d374ca.svg"
   },
   {
-    "revision": "6cf810f2a3d05c3d922903f28c0f5b94",
-    "url": "/game/img/attack-top.6cf810f2.svg"
+    "revision": "ca3b304992434f4b6b84cd0006550576",
+    "url": "/game/img/attack-top.ca3b3049.svg"
   },
   {
-    "revision": "623a8e4a30b28925d0674c76bc53eb4f",
-    "url": "/game/img/dice-1-reverse.623a8e4a.svg"
+    "revision": "f658cc8a5b2919f7d3dbd6c328d5e2ac",
+    "url": "/game/img/dice-1.f658cc8a.svg"
   },
   {
-    "revision": "8c428148c5138f6bed5e2450e44dfec6",
-    "url": "/game/img/dice-2-reverse.8c428148.svg"
+    "revision": "18cb1e075d4361ccae0adc3bfe2ccbf0",
+    "url": "/game/img/dice-2.18cb1e07.svg"
   },
   {
-    "revision": "1a37095bcb5f0ad5fd764d27ccc94b39",
-    "url": "/game/img/dice-3-reverse.1a37095b.svg"
+    "revision": "0b052574ef996784a30ff2cd29e080e7",
+    "url": "/game/img/dice-3.0b052574.svg"
   },
   {
-    "revision": "4ce93dfd0ce16d235c9b0091f37a4705",
-    "url": "/game/img/dice-4-reverse.4ce93dfd.svg"
-  },
-  {
-    "revision": "ce0e282cc90c63eb582db682ffadc6a2",
-    "url": "/game/img/dice-5-reverse.ce0e282c.svg"
+    "revision": "b6a22fb2c438822f1d6c7f7475b63f3b",
+    "url": "/game/img/dice-4.b6a22fb2.svg"
   },
   {
     "revision": "f3988b5f4d6028d8fce9dde14606be33",
     "url": "/game/img/dice-5.f3988b5f.svg"
   },
   {
-    "revision": "189cf5b8e7024294d13882bebb24a808",
-    "url": "/game/img/dice-6-reverse.189cf5b8.svg"
+    "revision": "d823cd605f4cced60b69d927e21c6fbc",
+    "url": "/game/img/dice-6.d823cd60.svg"
   },
   {
-    "revision": "229fc42bad79d59b7eea40e893b6665b",
+    "revision": "8cfb9de4feaff68dbb2ac428832682bf",
     "url": "/game/index.html"
   },
   {
-    "revision": "bdf01ec325cb4cf98186",
-    "url": "/game/js/app.588f9b60.js"
+    "revision": "872c64068f6e99b387b6",
+    "url": "/game/js/app.2008afac.js"
   },
   {
-    "revision": "cd54da6736991a1593e7",
-    "url": "/game/js/chunk-vendors.52c1c66f.js"
+    "revision": "f94d796f1b1ea8dea86d",
+    "url": "/game/js/chunk-vendors.4c806e5e.js"
   },
   {
     "revision": "bd51f0dfe90d51a59a56ce26622a4c68",
