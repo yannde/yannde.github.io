@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3307ccfea0b23dd0b9fb",
-    "url": "/game/css/app.bd4b7fd2.css"
+    "revision": "bdf01ec325cb4cf98186",
+    "url": "/game/css/app.03fb3b6b.css"
   },
   {
     "revision": "cd54da6736991a1593e7",
@@ -120,6 +120,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game/fonts/materialdesignicons-webfont.ff13d121.woff"
   },
   {
+    "revision": "bad89d07852784d1d7b61bbf090904e6",
+    "url": "/game/img/attack-bottom.bad89d07.svg"
+  },
+  {
+    "revision": "f6e63d6a0d7fb27813729a7655d45465",
+    "url": "/game/img/attack-left.f6e63d6a.svg"
+  },
+  {
+    "revision": "a5f4e4f9f44ff4d0497a4d683244da3f",
+    "url": "/game/img/attack-right.a5f4e4f9.svg"
+  },
+  {
+    "revision": "6cf810f2a3d05c3d922903f28c0f5b94",
+    "url": "/game/img/attack-top.6cf810f2.svg"
+  },
+  {
     "revision": "623a8e4a30b28925d0674c76bc53eb4f",
     "url": "/game/img/dice-1-reverse.623a8e4a.svg"
   },
@@ -148,16 +164,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game/img/dice-6-reverse.189cf5b8.svg"
   },
   {
-    "revision": "3eeaa18c88c9853f95dde13bb66d5017",
+    "revision": "229fc42bad79d59b7eea40e893b6665b",
     "url": "/game/index.html"
   },
   {
-    "revision": "f5c9ff36b06da0754790",
-    "url": "/game/js/about.a7201717.js"
-  },
-  {
-    "revision": "3307ccfea0b23dd0b9fb",
-    "url": "/game/js/app.57b5d413.js"
+    "revision": "bdf01ec325cb4cf98186",
+    "url": "/game/js/app.588f9b60.js"
   },
   {
     "revision": "cd54da6736991a1593e7",
