@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3abecd2aff59358096d6",
-    "url": "/game/css/app.f57f81c1.css"
+    "revision": "08d014953026d6823467",
+    "url": "/game/css/app.c0434051.css"
   },
   {
-    "revision": "f94d796f1b1ea8dea86d",
+    "revision": "28dbf8fd7dadcec58d58",
     "url": "/game/css/chunk-vendors.ecf9ab8e.css"
   },
   {
@@ -160,16 +160,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game/img/dice-6.d823cd60.svg"
   },
   {
-    "revision": "6714cb252051f2ce18d03cef320ef755",
+    "revision": "7bab6e65114149262816e3073f35be9c",
     "url": "/game/index.html"
   },
   {
-    "revision": "3abecd2aff59358096d6",
-    "url": "/game/js/app.e285d6f3.js"
+    "revision": "08d014953026d6823467",
+    "url": "/game/js/app.8d9538fa.js"
   },
   {
-    "revision": "f94d796f1b1ea8dea86d",
-    "url": "/game/js/chunk-vendors.4c806e5e.js"
+    "revision": "28dbf8fd7dadcec58d58",
+    "url": "/game/js/chunk-vendors.04b6486c.js"
   },
   {
     "revision": "bd51f0dfe90d51a59a56ce26622a4c68",
