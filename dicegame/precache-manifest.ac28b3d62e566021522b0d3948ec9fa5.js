@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4aa14f6a32a9b116b847",
-    "url": "/dicegame/css/app.a412abf0.css"
+    "revision": "2528691dd07a3e4e7bad",
+    "url": "/dicegame/css/app.0e6e7437.css"
   },
   {
     "revision": "0544850af3f2128bf8d8",
@@ -104,6 +104,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/fonts/Roboto-ThinItalic.8a96edbb.woff"
   },
   {
+    "revision": "de3cbfee213b1ba3c6f9dfadc620ebe7",
+    "url": "/dicegame/fonts/icons.de3cbfee.ttf"
+  },
+  {
+    "revision": "fe021caee9d710f6f76bb225ecfeebef",
+    "url": "/dicegame/fonts/icons.fe021cae.woff"
+  },
+  {
     "revision": "541e65fb46e44ecdf7a9da8a9b881446",
     "url": "/dicegame/fonts/materialdesignicons-webfont.541e65fb.eot"
   },
@@ -136,36 +144,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/img/attack-top.ca3b3049.svg"
   },
   {
-    "revision": "f658cc8a5b2919f7d3dbd6c328d5e2ac",
-    "url": "/dicegame/img/dice-1.f658cc8a.svg"
+    "revision": "623a8e4a30b28925d0674c76bc53eb4f",
+    "url": "/dicegame/img/dice-1-reverse.623a8e4a.svg"
   },
   {
-    "revision": "18cb1e075d4361ccae0adc3bfe2ccbf0",
-    "url": "/dicegame/img/dice-2.18cb1e07.svg"
+    "revision": "8c428148c5138f6bed5e2450e44dfec6",
+    "url": "/dicegame/img/dice-2-reverse.8c428148.svg"
   },
   {
-    "revision": "0b052574ef996784a30ff2cd29e080e7",
-    "url": "/dicegame/img/dice-3.0b052574.svg"
+    "revision": "1a37095bcb5f0ad5fd764d27ccc94b39",
+    "url": "/dicegame/img/dice-3-reverse.1a37095b.svg"
   },
   {
-    "revision": "b6a22fb2c438822f1d6c7f7475b63f3b",
-    "url": "/dicegame/img/dice-4.b6a22fb2.svg"
+    "revision": "4ce93dfd0ce16d235c9b0091f37a4705",
+    "url": "/dicegame/img/dice-4-reverse.4ce93dfd.svg"
+  },
+  {
+    "revision": "ce0e282cc90c63eb582db682ffadc6a2",
+    "url": "/dicegame/img/dice-5-reverse.ce0e282c.svg"
   },
   {
     "revision": "f3988b5f4d6028d8fce9dde14606be33",
     "url": "/dicegame/img/dice-5.f3988b5f.svg"
   },
   {
-    "revision": "d823cd605f4cced60b69d927e21c6fbc",
-    "url": "/dicegame/img/dice-6.d823cd60.svg"
+    "revision": "189cf5b8e7024294d13882bebb24a808",
+    "url": "/dicegame/img/dice-6-reverse.189cf5b8.svg"
   },
   {
-    "revision": "2a099871d16dadae85302251063165b4",
+    "revision": "02e38995beaa9799f0bb7c7aaa1e2637",
     "url": "/dicegame/index.html"
   },
   {
-    "revision": "4aa14f6a32a9b116b847",
-    "url": "/dicegame/js/app.673c04b8.js"
+    "revision": "2528691dd07a3e4e7bad",
+    "url": "/dicegame/js/app.af0219d5.js"
   },
   {
     "revision": "0544850af3f2128bf8d8",
