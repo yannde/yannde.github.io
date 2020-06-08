@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1816e4083041713a6c0",
-    "url": "/dicegame/css/app.08d40572.css"
+    "revision": "fad65f142da63d6973ac",
+    "url": "/dicegame/css/app.28b1dacf.css"
   },
   {
-    "revision": "44c071f555aa2348dd76",
+    "revision": "7b84645a24d6005dd47a",
     "url": "/dicegame/css/chunk-vendors.ecf9ab8e.css"
   },
   {
@@ -172,16 +172,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/img/dice-6-reverse.189cf5b8.svg"
   },
   {
-    "revision": "a912ce65f3805343dd95e1d1a29c51a3",
+    "revision": "01694f3e7412b09a159bc0a96bd9e341",
     "url": "/dicegame/index.html"
   },
   {
-    "revision": "f1816e4083041713a6c0",
-    "url": "/dicegame/js/app.ae652e56.js"
+    "revision": "fad65f142da63d6973ac",
+    "url": "/dicegame/js/app.0ae9f362.js"
   },
   {
-    "revision": "44c071f555aa2348dd76",
-    "url": "/dicegame/js/chunk-vendors.ee9bae39.js"
+    "revision": "7b84645a24d6005dd47a",
+    "url": "/dicegame/js/chunk-vendors.b38a40c2.js"
   },
   {
     "revision": "bd51f0dfe90d51a59a56ce26622a4c68",
