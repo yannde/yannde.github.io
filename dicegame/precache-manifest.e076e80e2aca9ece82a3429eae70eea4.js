@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2414822c9777aef23757",
-    "url": "/dicegame/css/app.ba93a8b3.css"
+    "revision": "291253706810a534aa6f",
+    "url": "/dicegame/css/app.4040bad4.css"
   },
   {
     "revision": "7b84645a24d6005dd47a",
@@ -128,6 +128,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/fonts/materialdesignicons-webfont.ff13d121.woff"
   },
   {
+    "revision": "1e3351010bc838e06e2cadcd83d0ebc0",
+    "url": "/dicegame/img/arrow-bottom-right.1e335101.svg"
+  },
+  {
+    "revision": "8d97375f492787f2ed4586636b30f7ce",
+    "url": "/dicegame/img/arrow-right-top.8d97375f.svg"
+  },
+  {
     "revision": "8307b328a09b3d5c3a7385be7471a9fa",
     "url": "/dicegame/img/attack-bottom.8307b328.svg"
   },
@@ -172,12 +180,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/img/dice-6.d823cd60.svg"
   },
   {
-    "revision": "c678fd9304ca1ae1cd0d30f822b4122a",
+    "revision": "2f48e3d12404ca204952b8603184d235",
     "url": "/dicegame/index.html"
   },
   {
-    "revision": "2414822c9777aef23757",
-    "url": "/dicegame/js/app.c52ba449.js"
+    "revision": "291253706810a534aa6f",
+    "url": "/dicegame/js/app.011bcb05.js"
   },
   {
     "revision": "7b84645a24d6005dd47a",
