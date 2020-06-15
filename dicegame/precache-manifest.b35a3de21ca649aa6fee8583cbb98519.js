@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f6e6dbe99549e26713e",
-    "url": "/dicegame/css/app.2ae9bf32.css"
+    "revision": "db24439d00357da3b172",
+    "url": "/dicegame/css/app.dc2ecb53.css"
   },
   {
     "revision": "7b84645a24d6005dd47a",
@@ -104,12 +104,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/fonts/Roboto-ThinItalic.8a96edbb.woff"
   },
   {
-    "revision": "04c478dac48ae32444f8a0ad06bb2b37",
-    "url": "/dicegame/fonts/icons.04c478da.ttf"
+    "revision": "aae0878ad5df398a36bd1ced2feefeeb",
+    "url": "/dicegame/fonts/icons.aae0878a.ttf"
   },
   {
-    "revision": "e0b420b07506f622d914ac0ce5a8794d",
-    "url": "/dicegame/fonts/icons.e0b420b0.woff"
+    "revision": "add4562766367f187cdfa7984e160095",
+    "url": "/dicegame/fonts/icons.add45627.woff"
   },
   {
     "revision": "541e65fb46e44ecdf7a9da8a9b881446",
@@ -172,36 +172,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/img/background.cf618bef.svg"
   },
   {
-    "revision": "f658cc8a5b2919f7d3dbd6c328d5e2ac",
-    "url": "/dicegame/img/dice-1.f658cc8a.svg"
-  },
-  {
-    "revision": "18cb1e075d4361ccae0adc3bfe2ccbf0",
-    "url": "/dicegame/img/dice-2.18cb1e07.svg"
-  },
-  {
-    "revision": "0b052574ef996784a30ff2cd29e080e7",
-    "url": "/dicegame/img/dice-3.0b052574.svg"
-  },
-  {
-    "revision": "b6a22fb2c438822f1d6c7f7475b63f3b",
-    "url": "/dicegame/img/dice-4.b6a22fb2.svg"
-  },
-  {
     "revision": "f3988b5f4d6028d8fce9dde14606be33",
     "url": "/dicegame/img/dice-5.f3988b5f.svg"
   },
   {
-    "revision": "d823cd605f4cced60b69d927e21c6fbc",
-    "url": "/dicegame/img/dice-6.d823cd60.svg"
-  },
-  {
-    "revision": "8be709fa8d897effa2b8fdf32f0c3d78",
+    "revision": "574f67c1271415acce998edcc28344af",
     "url": "/dicegame/index.html"
   },
   {
-    "revision": "7f6e6dbe99549e26713e",
-    "url": "/dicegame/js/app.2380830b.js"
+    "revision": "db24439d00357da3b172",
+    "url": "/dicegame/js/app.3d12ba15.js"
   },
   {
     "revision": "7b84645a24d6005dd47a",
