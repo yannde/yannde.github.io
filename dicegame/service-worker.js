@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dicegame/precache-manifest.7189e80a013138ba9f7d52e061c608d3.js"
+  "/dicegame/precache-manifest.693ad3ec0a3bc25ba75c64ea686a1c27.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "game"});
