@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "394b54145980d05fd0a8",
-    "url": "/dicegame/css/app.a01db46d.css"
+    "revision": "8265e3e9c45bb0c4e998",
+    "url": "/dicegame/css/app.dc321545.css"
   },
   {
     "revision": "f867ef182b02a84525b3",
@@ -180,12 +180,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/img/sky.495c1ff5.jpg"
   },
   {
-    "revision": "f941841a13d58111a3b163dd8af2cb72",
+    "revision": "9537bebdc094fbfbeac8a77f48b89784",
     "url": "/dicegame/index.html"
   },
   {
-    "revision": "394b54145980d05fd0a8",
-    "url": "/dicegame/js/app.ca0d5d08.js"
+    "revision": "8265e3e9c45bb0c4e998",
+    "url": "/dicegame/js/app.5800b668.js"
   },
   {
     "revision": "f867ef182b02a84525b3",
