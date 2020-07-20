@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "07a71321d36971ee35d8",
-    "url": "/dicegame/css/app.dc321545.css"
+    "revision": "0f3230e82d688402de76",
+    "url": "/dicegame/css/app.bf489eda.css"
   },
   {
-    "revision": "f867ef182b02a84525b3",
-    "url": "/dicegame/css/chunk-vendors.ecf9ab8e.css"
+    "revision": "3a12681db9ab112ff5b9",
+    "url": "/dicegame/css/chunk-vendors.5056e7aa.css"
   },
   {
     "revision": "313a65630d341645c13e4f2a0364381d",
@@ -180,15 +180,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/img/sky.495c1ff5.jpg"
   },
   {
-    "revision": "c3d8871cfc5b7f5c5c1aa950cc418200",
+    "revision": "06efee275ea9ebb1d18153af40765c5b",
     "url": "/dicegame/index.html"
   },
   {
-    "revision": "07a71321d36971ee35d8",
-    "url": "/dicegame/js/app.6458faa4.js"
+    "revision": "0f3230e82d688402de76",
+    "url": "/dicegame/js/app.7279d974.js"
   },
   {
-    "revision": "f867ef182b02a84525b3",
+    "revision": "3a12681db9ab112ff5b9",
     "url": "/dicegame/js/chunk-vendors.68b62057.js"
   },
   {
