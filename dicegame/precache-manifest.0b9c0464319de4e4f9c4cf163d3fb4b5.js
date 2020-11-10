@@ -180,7 +180,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicegame/img/og.jpg"
   },
   {
-    "revision": "f3b10aa3b2890beb4fd8f67d7d61b45e",
+    "revision": "695f8ff83cde32c5a55b37adb28791bc",
     "url": "/dicegame/index.html"
   },
   {
